@@ -1,0 +1,72 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+}
+
+.container-wrapper
+{
+    margin: 50px auto;
+    font-weight: 400;
+    text-align: center;
+}
+
+h1
+{
+    font-weight: lighter;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+button.accordion
+{
+    background: #AF7AC5;
+    color: white;
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.accordion:after
+{
+    content: '\02795'; /* Unicode character "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+  
+.active:after
+{
+    content: "\2796"; /* Unicode character "minus" sign (-) */
+}
+
+
+button:focus
+{
+    outline: none;
+}
+
+button.accordion.active, button.accordion:hover
+{
+    background: #512E5F;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: min-height 0.2s ease-out;
+    text-align: center;
+  }
